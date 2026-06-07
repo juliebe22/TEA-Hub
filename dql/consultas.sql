@@ -22,8 +22,8 @@ JOIN profissional pr ON pr.id_profissional = a.id_profissional
 WHERE p.id_clinica = ? AND p.nome_paciente ILIKE ?
 ORDER BY a.data_atendimento DESC;
 
-SELECT * FROM paciente WHERE id_clinica = ? ORDER BY nome_paciente
+SELECT * FROM paciente WHERE id_clinica = ? ORDER BY nome_paciente;
   
-SELECT * FROM paciente WHERE id_clinica = ? AND nome_paciente ILIKE ? ORDER BY nome_paciente
+SELECT * FROM paciente WHERE id_clinica = ? AND nome_paciente ILIKE ? ORDER BY nome_paciente;
 
-           
+SELECT id_paciente, nome_paciente FROM paciente ORDER BY nome_paciente;           
