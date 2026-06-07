@@ -17,7 +17,3 @@ INSERT INTO profissional (id_clinica, nome, email, usuario_login, senha_login, e
 VALUES (?, ?, ?, ?, ?, ?, ?)
 
 DELETE FROM paciente WHERE id_paciente = ?
-
-SELECT * FROM paciente WHERE id_clinica = ? ORDER BY nome_paciente
-  
-SELECT * FROM paciente WHERE id_clinica = ? AND nome_paciente ILIKE ? ORDER BY nome_paciente
