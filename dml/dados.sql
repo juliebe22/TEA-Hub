@@ -7,5 +7,17 @@ WHERE id_atendimento = ?
 
 DELETE FROM atendimento WHERE id_atendimento = ?
 
+INSERT INTO paciente (nome_paciente, data_nascimento, responsavel, telefone_responsavel, nivel_tea, status_ativo, id_clinica)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+
+UPDATE paciente SET nome_paciente = ?, data_nascimento = ?, responsavel = ?, telefone_responsavel = ?, nivel_tea = ?, status_ativo = ? 
+WHERE id_paciente = ?
+
 INSERT INTO profissional (id_clinica, nome, email, usuario_login, senha_login, especialidade, registro_profissional) 
 VALUES (?, ?, ?, ?, ?, ?, ?)
+
+DELETE FROM paciente WHERE id_paciente = ?
+
+SELECT * FROM paciente WHERE id_clinica = ? ORDER BY nome_paciente
+  
+SELECT * FROM paciente WHERE id_clinica = ? AND nome_paciente ILIKE ? ORDER BY nome_paciente
