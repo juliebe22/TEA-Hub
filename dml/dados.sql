@@ -17,3 +17,5 @@ INSERT INTO profissional (id_clinica, nome, email, usuario_login, senha_login, e
 VALUES (?, ?, ?, ?, ?, ?, ?)
 
 DELETE FROM paciente WHERE id_paciente = ?
+
+UPDATE paciente SET status_ativo = false WHERE id_paciente = ?
