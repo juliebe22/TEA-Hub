@@ -27,3 +27,30 @@ SELECT * FROM paciente WHERE id_clinica = ? ORDER BY nome_paciente;
 SELECT * FROM paciente WHERE id_clinica = ? AND nome_paciente ILIKE ? ORDER BY nome_paciente;
 
 SELECT id_paciente, nome_paciente FROM paciente ORDER BY nome_paciente;           
+
+SELECT * FROM profissional WHERE usuario_login = ? AND senha_login = ? AND status_ativo = TRUE;
+
+SELECT * FROM profissional WHERE id_profissional = ?;
+
+SELECT id_profissional, nome, especialidade FROM profissional WHERE id_clinica = ? ORDER BY nome ASC;
+
+SELECT id_profissional, nome, especialidade FROM profissional WHERE id_clinica = ? AND LOWER(nome) LIKE ? ORDER BY nome ASC;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
